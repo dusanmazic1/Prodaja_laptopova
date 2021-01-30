@@ -1,0 +1,44 @@
+﻿<Window x:Class="Prodaja_laptopova.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prodaja_laptopova"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="470" Width="800">
+    <Grid Margin="0,0,0.333,-0.333">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label x:Name="dodajLap" Content="Dodaj Laptop" HorizontalAlignment="Left" Margin="267,10,0,0" VerticalAlignment="Top" Width="279" FontFamily="Stencil" FontSize="36" Height="56"/>
+        <Label x:Name="lblNaziv" Content="Naziv:" HorizontalAlignment="Left" Margin="36,103,0,0" VerticalAlignment="Top" Width="126" FontSize="20" Height="37"/>
+        <Label x:Name="lblModel" Content="Model:" HorizontalAlignment="Left" Margin="36,169,0,0" VerticalAlignment="Top" FontSize="20" Height="37" Width="71"/>
+        <Label x:Name="lblGar" Content="Garancija:" HorizontalAlignment="Left" Margin="36,226,0,0" VerticalAlignment="Top" FontSize="20" Height="37" Width="96"/>
+        <Label x:Name="lblVreme" Content="Datum unosa:" HorizontalAlignment="Left" Margin="36,282,0,0" VerticalAlignment="Top" FontSize="20" Height="37" Width="133"/>
+        <Label x:Name="lblSlika" Content="" HorizontalAlignment="Left" Margin="459,156,0,0" VerticalAlignment="Top" FontSize="20" Height="37" Width="10"/>
+        <TextBox x:Name="txtNaziv" HorizontalAlignment="Left" Height="34" Margin="204,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="158" FontSize="16"/>
+        <ComboBox x:Name="cmbModel" HorizontalAlignment="Left" Margin="204,103,0,0" VerticalAlignment="Top" Width="158" Height="37" FontSize="16" RenderTransformOrigin="0.5,0.5">
+            <ComboBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.261"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ComboBox.RenderTransform>
+        </ComboBox>
+        <TextBox x:Name="txtGar" HorizontalAlignment="Left" Height="34" Margin="204,229,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="158" FontSize="16"/>
+        <DatePicker x:Name="dataVreme" HorizontalAlignment="Left" Margin="204,282,0,0" VerticalAlignment="Top" Width="158" Height="37" FontSize="18"/>
+        <Image x:Name="imgSlika" HorizontalAlignment="Left" Height="167" Margin="526,159,0,0" VerticalAlignment="Top" Width="186"/>
+        <Button x:Name="btnAdd" Content="Dodaj" HorizontalAlignment="Left" Margin="147,355,0,0" VerticalAlignment="Top" Width="215" Height="54" Click="btnAdd_Click" FontSize="20"/>
+        <Button x:Name="btnClose" Content="Zatvori" HorizontalAlignment="Left" Margin="459,355,0,0" VerticalAlignment="Top" Width="216" Height="54" Click="btnClose_Click" FontSize="20"/>
+        <Button x:Name="btnSlika" Content="Dodaj Sliku" HorizontalAlignment="Left" Margin="556,112,0,0" VerticalAlignment="Top" Width="119" Click="btnSlika_Click" FontSize="20" Height="31"/>
+        <Label Name="erorNaziv" Content="" HorizontalAlignment="Left" Margin="204,207,0,0" VerticalAlignment="Top" Width="158" FontSize="14" Height="29"/>
+        <Label Name="erorModel" Content="" HorizontalAlignment="Left" Margin="204,140,0,0" VerticalAlignment="Top" Width="158" FontSize="14" RenderTransformOrigin="0.5,0.5" Height="29"/>
+        <Label Name="erorGaran" Content="" HorizontalAlignment="Left" Margin="204,258,0,0" VerticalAlignment="Top" Width="158" FontSize="16" Height="32"/>
+        <Label Name="erorSlika" HorizontalAlignment="Left" Margin="556,324,0,0" VerticalAlignment="Top" Width="119" Height="26" FontSize="14"/>
+        <Label Name="erorVreme" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="158" Margin="204,324,0,0" FontSize="16" Height="32"/>
+        <Label Content="(U MESECIMA)" HorizontalAlignment="Left" Margin="36,251,0,0" VerticalAlignment="Top" Width="107" Height="26"/>
+
+    </Grid>
+</Window>
